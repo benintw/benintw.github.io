@@ -41,22 +41,27 @@
         </div>
       </header>
 
-      <section id="education" class="education">
-        <h2>Education</h2>
-        <div class="education-item">
-          <h3>Master Program in Artificial Intelligence</h3>
-          <p>National Taipei University of Technology, Taiwan</p>
-          <p>Sep 2023 - Present</p>
-          <p>
-            Relevant coursework: Database Design, VR Application and Design,
-            Building Deep Learning Applications
-          </p>
+      <section id="education" class="education" style="display: flex; justify-content: space-between; align-items: flex-start;">
+        <div style="flex: 1;">
+          <h2>Education</h2>
+          <div class="education-item">
+            <h3>Master Program in Artificial Intelligence</h3>
+            <p>National Taipei University of Technology, Taiwan</p>
+            <p>Sep 2023 - Present</p>
+            <p>
+              Relevant coursework: Database Design, VR Application and Design,
+              Building Deep Learning Applications
+            </p>
+          </div>
+          <div class="education-item">
+            <h3>Bachelor of Applied Science – Geological Engineering</h3>
+            <p>University of British Columbia, Canada</p>
+            <p>Graduated May 2016</p>
+            <p>Relevant Coursework: Statistics, Calculus, Linear Algebra</p>
+          </div>
         </div>
-        <div class="education-item">
-          <h3>Bachelor of Applied Science – Geological Engineering</h3>
-          <p>University of British Columbia, Canada</p>
-          <p>Graduated May 2016</p>
-          <p>Relevant Coursework: Statistics, Calculus, Linear Algebra</p>
+        <div style="flex: 0 0 320px; margin-left: 20px; border: 1px solid #ccc; border-radius: 10px; overflow: hidden;">
+          <img src="GA.gif" alt="GA animation" style="width: 100%; height: auto; display: block;">
         </div>
       </section>
 
@@ -220,6 +225,7 @@
           <p>
             Scalable pipeline using U-Net & EfficientNet, achieving 88% IoU on
             Massachusetts Roads Dataset. Production-ready with Docker & tests.
+            <a href="https://github.com/benintw/Aerial-Image-Segmentation" target="_blank" class="github-link">GitHub</a>
           </p>
           <div class="tech-stack">
             <span class="tech-tag">PyTorch</span>
@@ -249,19 +255,69 @@
             <span class="metric">📦 Dockerized</span>
           </div>
         </div>
+
         <div class="project-card">
-          <h3>🙂 Facial Expression Recognition</h3>
+          <h3>🚶 Person Re-Identification</h3>
           <p>
-            Built a CNN for facial emotion recognition on grayscale images,
-            achieving 85% accuracy with Albumentations for data augmentation.
+            Siamese network with EfficientNet for person re-identification,
+            optimized using triplet loss. Productionized with Docker.
+            <a href="https://github.com/benintw/Person-Reidentification-Siamese" target="_blank" class="github-link">GitHub</a>
+          </p>
+          <div class="tech-stack">
+            <span class="tech-tag">Computer Vision</span>
+            <span class="tech-tag">PyTorch</span>
+            <span class="tech-tag">Metric Learning</span>
+            <span class="tech-tag">Docker</span>
+          </div>
+          <div class="metrics">
+            <span class="metric">📦 Dockerized</span>
+          </div>
+        </div>
+
+
+        <div class="project-card">
+          <h3>🎯 Human Image Segmentation</h3>
+          <p>
+            U-Net based model with EfficientNet backbone, advanced
+            augmentations, and early stopping. Dockerized solution.
+            <a href="https://github.com/benintw/Human-Image-Segmentation" target="_blank" class="github-link">GitHub</a>
+          </p>
+          <div class="tech-stack">
+            <span class="tech-tag">TensorFlow</span>
+            <span class="tech-tag">U-Net</span>
+            <span class="tech-tag">EfficientNet</span>
+            <span class="tech-tag">Docker</span>
+          </div>
+          <div class="metrics">
+            <span class="metric">📈 88% IoU Accuracy</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>🙂 Facial Expression Recognition Using EfficientNet</h3>
+          <p>
+            Developed a facial emotion recognition model for grayscale images,
+            improving generalization with image augmentations (Albumentations)
+            and optimized using Cross-Entropy Loss and Adam optimizer.
+            <a href="https://github.com/benintw/Facial-Expression-Recognition" target="_blank" class="github-link">GitHub</a>
           </p>
           <div class="tech-stack">
             <span class="tech-tag">PyTorch</span>
-            <span class="tech-tag">Computer Vision</span>
-            <span class="tech-tag">Data Augmentation</span>
+            <span class="tech-tag">Albumentations</span>
           </div>
-          <div class="metrics">
-            <span class="metric">📈 85% Accuracy</span>
+        </div>
+        <div class="project-card">
+          <h3>🍎 Object Localization for Fruits</h3>
+          <p>
+            Built a custom object localization model using EfficientNet
+            architecture to predict bounding box coordinates and classify fruits
+            from images.
+          </p>
+          <a href="https://github.com/benintw/Fruit-Localization" target="_blank" class="github-link">GitHub</a>
+          <div class="tech-stack">
+            <span class="tech-tag">PyTorch</span>
+            <span class="tech-tag">EfficientNet</span>
+            <span class="tech-tag">Object Localization</span>
           </div>
         </div>
         <div class="project-card">
@@ -311,22 +367,8 @@
             <span class="metric">📈 92% Accuracy</span>
           </div>
         </div>
-        <div class="project-card">
-          <h3>🚶 Person Re-Identification</h3>
-          <p>
-            Siamese network with EfficientNet for person re-identification,
-            optimized using triplet loss. Productionized with Docker.
-          </p>
-          <div class="tech-stack">
-            <span class="tech-tag">Computer Vision</span>
-            <span class="tech-tag">PyTorch</span>
-            <span class="tech-tag">Metric Learning</span>
-            <span class="tech-tag">Docker</span>
-          </div>
-          <div class="metrics">
-            <span class="metric">📦 Dockerized</span>
-          </div>
-        </div>
+
+
         <div class="project-card">
           <h3>🏋️ Gym Member Management System</h3>
           <p>
@@ -368,47 +410,8 @@
             <span class="metric">📊 95% Visualization Accuracy</span>
           </div>
         </div>
-        <div class="project-card">
-          <h3>🎯 Human Image Segmentation</h3>
-          <p>
-            U-Net based model with EfficientNet backbone, advanced
-            augmentations, and early stopping. Dockerized solution.
-          </p>
-          <div class="tech-stack">
-            <span class="tech-tag">TensorFlow</span>
-            <span class="tech-tag">U-Net</span>
-            <span class="tech-tag">EfficientNet</span>
-            <span class="tech-tag">Docker</span>
-          </div>
-          <div class="metrics">
-            <span class="metric">📈 88% IoU Accuracy</span>
-          </div>
-        </div>
-        <div class="project-card">
-          <h3>🍎 Object Localization for Fruits</h3>
-          <p>
-            Built a custom object localization model using EfficientNet
-            architecture to predict bounding box coordinates and classify fruits
-            from images.
-          </p>
-          <div class="tech-stack">
-            <span class="tech-tag">PyTorch</span>
-            <span class="tech-tag">EfficientNet</span>
-            <span class="tech-tag">Object Localization</span>
-          </div>
-        </div>
-        <div class="project-card">
-          <h3>🙂 Facial Expression Recognition Using EfficientNet</h3>
-          <p>
-            Developed a facial emotion recognition model for grayscale images,
-            improving generalization with image augmentations (Albumentations)
-            and optimized using Cross-Entropy Loss and Adam optimizer.
-          </p>
-          <div class="tech-stack">
-            <span class="tech-tag">PyTorch</span>
-            <span class="tech-tag">Albumentations</span>
-          </div>
-        </div>
+
+
         <div class="project-card">
           <h3>🔍 GPT-2 Model Demonstration Web App</h3>
           <p>
@@ -416,6 +419,7 @@
             tokenization, self-attention, and next-word predictions, with
             user-customizable model parameters in Streamlit.
           </p>
+          <a href="https://github.com/benintw/GPT2_demo" target="_blank" class="github-link">GitHub</a>
           <div class="tech-stack">
             <span class="tech-tag">Streamlit</span>
           </div>
@@ -427,6 +431,7 @@
             training dynamics of a custom Transformer model, allowing real-time
             parameter adjustments and loss visualization.
           </p>
+          <a href="https://github.com/benintw/Transformer_demo" target="_blank" class="github-link">GitHub</a>
           <div class="tech-stack">
             <span class="tech-tag">Interactive Web App</span>
           </div>
