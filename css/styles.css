@@ -280,6 +280,13 @@ h1 {
     font-size: 0.9rem;
 }
 
+#learning-projects .project-card {
+    background-color: #f9f9f9; /* Lighter background */
+    border: 1px solid #ddd;
+  }
+  #learning-projects .project-card h3 {
+    font-size: 1.2rem; /* Slightly smaller heading */
+  }
 
 
 @media (max-width: 768px) {
