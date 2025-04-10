@@ -169,6 +169,7 @@
       <!-- PROJECTS -->
       <section id="data-science-projects" class="projects-grid">
         <h2 style="grid-column: span 3; margin-bottom: 0; font-size: 2rem">Data Science Projects</h2>
+
         <div class="project-card">
           <h3>Aerial Road Segmentation</h3>
           <p>
@@ -182,6 +183,7 @@
             <span class="tech-tag">Software Engineering</span>
           </div>
         </div>
+        
         <div class="project-card">
           <h3>Semiconductor Chip Anomaly Detection</h3>
           <p>
@@ -220,9 +222,13 @@
 
         <div class="project-card">
           <h3>Quora Insincere Questions Classifier with BERT</h3>
+          <ul>
+            <li>Fine-tuned pre-trained BERT models from Hugging Face on the Quora dataset to detect insincere questions with 92% accuracy</li>
+            <li>Implemented Docker containerization and Makefile automation for streamlined development and deployment workflows</li>
+            <li>Optimized model performance with gradient accumulation and YAML configuration system for flexible experimentation</li>
+            <li>Improved maintainability through clean separation of model components, training logic, and inference pipeline</li>
+          </ul>
           <p>
-            Developed an optimized BERT-based classifier for detecting insincere questions in the Quora dataset (1M+ questions), achieving 90% accuracy, 88% precision, and 85% recall. Implemented custom performance optimizations including gradient accumulation and batch size tuning, reducing training time by 4x. Built a modular architecture with YAML configuration, custom profiling, and comprehensive logging. Leveraged transfer learning with Hugging Face's DistilBERT and created a custom classification head. Deployed with Docker, Makefile, and FastAPI for real-time predictions, and visualized BERT attention weights for model interpretability.
-            <!-- <a href="projects/quora-insincere-questions-classifier.html" class="project-link">Details</a> -->
             <a href="https://github.com/benintw/Quora-Insincere-Questions-Classifier" target="_blank" class="github-link">GitHub</a>
           </p>
           <div class="tech-stack">
@@ -230,7 +236,7 @@
             <span class="tech-tag">PyTorch</span>
             <span class="tech-tag">Hugging Face</span>
             <span class="tech-tag">Docker</span>
-            <span class="tech-tag">FastAPI</span>
+            <span class="tech-tag">Makefile</span>
             <span class="tech-tag">Transfer Learning</span>
           </div>
         </div>
